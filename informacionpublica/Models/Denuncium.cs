@@ -9,7 +9,7 @@ public partial class Denuncium
 
     public string? Denuncia { get; set; }
 
-    public string? Tipodenuncia { get; set; }
+    public int? Tipodenuncia { get; set; }
 
     public string? Denunciante { get; set; }
 
