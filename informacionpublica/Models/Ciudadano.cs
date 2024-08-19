@@ -91,4 +91,5 @@ public partial class Ciudadano
 
     public CiudadanosDTO Ciudadanosc { get; set; }
     public CiudadanosDTO Ciudadanos { get; internal set; }
+   
 }

@@ -19,3 +19,4 @@ public partial class Historialmedico
 
     public virtual Ciudadano? CiudadanoNavigation { get; set; }
 }
+

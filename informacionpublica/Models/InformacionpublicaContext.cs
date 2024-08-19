@@ -6,6 +6,7 @@ namespace InformacionPublica.Server.Models;
 
 public partial class InformacionpublicaContext : DbContext
 {
+
     public InformacionpublicaContext()
     {
     }
