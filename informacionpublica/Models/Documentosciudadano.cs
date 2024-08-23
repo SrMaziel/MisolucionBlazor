@@ -16,4 +16,5 @@ public partial class Documentosciudadano
     public virtual Ciudadano? CiudadanoNavigation { get; set; }
 
     public virtual Tipodocumento? TipodocumentoNavigation { get; set; }
+    public object CiudadanosNavigation { get; internal set; }
 }

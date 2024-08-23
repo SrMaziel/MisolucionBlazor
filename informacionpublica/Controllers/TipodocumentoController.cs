@@ -9,11 +9,11 @@ namespace InformacionPublica.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class TipodocuemntoController : ControllerBase
+    public class TipodocumentoController : ControllerBase
     {
         private readonly InformacionpublicaContext _dbContext;
 
-        public TipodocuemntoController(InformacionpublicaContext dbContext)
+        public TipodocumentoController(InformacionpublicaContext dbContext)
         {
             _dbContext = dbContext;
         }

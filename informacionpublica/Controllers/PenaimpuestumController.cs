@@ -9,12 +9,12 @@ namespace InformacionPublica.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PenaimpuestumController : ControllerBase
+    public class PenaimpuestaController : ControllerBase
     {
 
         private readonly InformacionpublicaContext _dbContext;
 
-        public PenaimpuestumController(InformacionpublicaContext dbContext)
+        public PenaimpuestaController(InformacionpublicaContext dbContext)
         {
             _dbContext = dbContext;
         }

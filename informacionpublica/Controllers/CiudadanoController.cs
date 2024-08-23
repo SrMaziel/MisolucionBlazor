@@ -200,8 +200,6 @@ namespace InformacionPublica.Server.Controllers
 
                 }
 
-
-
             }
             catch (Exception ex)
             {
@@ -225,9 +223,6 @@ namespace InformacionPublica.Server.Controllers
             try
             {
 
-
-
-
                 var dbCiudadano = await _dbContext.Ciudadanos.FirstOrDefaultAsync(c => c.Idciudadano == id);
 
 
@@ -249,26 +244,19 @@ namespace InformacionPublica.Server.Controllers
                     dbCiudadano.Bienes = ciudadano.Bienes;
                     dbCiudadano.Estado = ciudadano.Estado;
 
-
-
-
                     _dbContext.Ciudadanos.Update(dbCiudadano);
                     await _dbContext.SaveChangesAsync();
                    
                     responseApi.EsCorrecto = true;
                     responseApi.Valor = dbCiudadano.Idciudadano;
 
-                
                 }
                 else
                 {
                     responseApi.EsCorrecto = false;
                     responseApi.Mensaje = "Ciudadano no encontrado";
 
-
                 }
-
-
 
             }
             catch (Exception ex)
@@ -298,7 +286,6 @@ namespace InformacionPublica.Server.Controllers
 
                 if (dbCiudadano != null)
                 {
-
 
                     _dbContext.Ciudadanos.Remove(dbCiudadano);
                     await _dbContext.SaveChangesAsync();

@@ -153,11 +153,12 @@ namespace InformacionPublica.Server.Controllers
         public async Task<IActionResult> Guardar(AntecedentesciudadanoDTO antecedentesciudadano)
         {
             var responseApi = new ResponseAPI<int>();
-           
+
             try
             {
                 var dbAntecedentesciudadano = new Antecedentesciudadano
                 {
+                    Idantecedentesciudadano = antecedentesciudadano.Idantecedentesciudadano,
                     Ciudadanos = antecedentesciudadano.Ciudadanos,
                     Delitos = antecedentesciudadano.Delitos,
                     Tiposdelitos = antecedentesciudadano.Tiposdelitos,
@@ -171,16 +172,17 @@ namespace InformacionPublica.Server.Controllers
                 _dbContext.Antecedentesciudadanos.Add(dbAntecedentesciudadano);
                 await _dbContext.SaveChangesAsync();
 
-                if(dbAntecedentesciudadano.Idantecedentesciudadano!=0)
+                if (dbAntecedentesciudadano.Idantecedentesciudadano != 0)
                 {
                     responseApi.EsCorrecto = true;
                     responseApi.Valor = dbAntecedentesciudadano.Idantecedentesciudadano;
-                }else
+                }
+                else
                 {
                     responseApi.EsCorrecto = false;
-                    responseApi.Mensaje ="No guardado";
+                    responseApi.Mensaje = "No guardado";
 
-                }               
+                }
 
             }
             catch (Exception ex)
@@ -196,7 +198,7 @@ namespace InformacionPublica.Server.Controllers
 
         [HttpPut]
         [Route("Editar/{id}")]
-        public async Task<IActionResult> Editar(AntecedentesciudadanoDTO antecedentesciudadano,int id)
+        public async Task<IActionResult> Editar(AntecedentesciudadanoDTO antecedentesciudadano, int id)
         {
             var responseApi = new ResponseAPI<int>();
 
@@ -210,7 +212,7 @@ namespace InformacionPublica.Server.Controllers
 
                 if (dbAntecedentesciudadano != null)
                 {
-
+                    dbAntecedentesciudadano.Idantecedentesciudadano = antecedentesciudadano.Idantecedentesciudadano;
                     dbAntecedentesciudadano.Ciudadanos = antecedentesciudadano.Ciudadanos;
                     dbAntecedentesciudadano.Delitos = antecedentesciudadano.Delitos;
                     dbAntecedentesciudadano.Tiposdelitos = antecedentesciudadano.Tiposdelitos;
@@ -240,7 +242,7 @@ namespace InformacionPublica.Server.Controllers
             catch (Exception ex)
             {
 
-               
+
                 responseApi.EsCorrecto = false;
                 responseApi.Mensaje = ex.Message;
             }
@@ -259,7 +261,7 @@ namespace InformacionPublica.Server.Controllers
             {
 
                 var dbAntecedentesciudadano = await _dbContext.Antecedentesciudadanos.FirstOrDefaultAsync(a => a.Idantecedentesciudadano == id);
-                
+
                 if (dbAntecedentesciudadano != null)
                 {
 
@@ -268,7 +270,7 @@ namespace InformacionPublica.Server.Controllers
 
 
                     responseApi.EsCorrecto = true;
-                    
+
                 }
                 else
                 {
@@ -291,7 +293,3 @@ namespace InformacionPublica.Server.Controllers
 
     }
 }
-
-
-
-
