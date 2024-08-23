@@ -11,7 +11,7 @@ namespace InformacionCrud.Shared
     public class CiudadanosDTO
     {
 
-        public int Idciudadanos { get; set; }
+        public int Idciudadano { get; set; }
 
 
 
@@ -95,5 +95,5 @@ namespace InformacionCrud.Shared
 
         public BienesDTO? Biene{ get; set; }
 
-        }
+}
     }

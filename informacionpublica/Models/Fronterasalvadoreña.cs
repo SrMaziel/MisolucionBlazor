@@ -5,6 +5,7 @@ namespace InformacionPublica.Server.Models;
 
 public partial class Fronterasalvadoreña
 {
+
     public int Idfronterasalvadoreñas { get; set; }
 
     public string? Fronteras { get; set; }

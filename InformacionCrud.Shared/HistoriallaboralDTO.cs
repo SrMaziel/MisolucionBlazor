@@ -40,6 +40,6 @@ namespace InformacionCrud.Shared
 
    
     public CiudadanosDTO? Ciudadanos { get; set; }
-        public TiposciudadanosDTO? Tipociudadanos { get; set; }
+        public TiposciudadanosDTO? Tiposciudadanos { get; set; }
     }
 }

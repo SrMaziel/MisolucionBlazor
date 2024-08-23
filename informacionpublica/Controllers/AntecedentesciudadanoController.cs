@@ -45,7 +45,7 @@ namespace InformacionPublica.Server.Controllers
                         {
 
                             Ciudadanos = item.CiudadanosNavigation?.Ciudadanos,
-                            Idciudadanos = item.CiudadanosNavigation!.Idciudadano,
+                            Idciudadano = item.CiudadanosNavigation!.Idciudadano,
 
                         },
 

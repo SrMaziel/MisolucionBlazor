@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace InformacionCrud.Shared
 {
     public class FronterasalvadoreñaDTO
+
     {
         public int Idfronterasalvadoreñas { get; set; }
 

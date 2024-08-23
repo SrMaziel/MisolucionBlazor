@@ -36,7 +36,7 @@ namespace InformacionPublica.Server.Controllers
                     {
 
 
-                        Idciudadanos = item.Idciudadano,
+                        Idciudadano = item.Idciudadano,
                         Nombre = item.Nombre,
                         Apellido = item.Apellido,
                         Fechanacimiento = item.Fechanacimiento,
@@ -115,7 +115,7 @@ namespace InformacionPublica.Server.Controllers
 
                 if (dbCiudadano != null)
                 {
-                    CiudadanoDTO.Idciudadanos = dbCiudadano.Idciudadano;
+                    CiudadanoDTO.Idciudadano = dbCiudadano.Idciudadano;
                     CiudadanoDTO.Nombre = dbCiudadano.Nombre;
                     CiudadanoDTO.Apellido = dbCiudadano.Apellido;
                     CiudadanoDTO.Fechanacimiento = dbCiudadano.Fechanacimiento;
@@ -167,7 +167,7 @@ namespace InformacionPublica.Server.Controllers
                 var dbCiudadano = new Ciudadano
                 {
 
-                    Idciudadano = ciudadano.Idciudadanos,
+                    Idciudadano = ciudadano.Idciudadano,
                     Nombre = ciudadano.Nombre,
                     Apellido = ciudadano.Apellido,
                     Fechanacimiento = ciudadano.Fechanacimiento,
@@ -234,7 +234,7 @@ namespace InformacionPublica.Server.Controllers
                 if (dbCiudadano!= null)
                 {
                    
-                    dbCiudadano.Idciudadano = ciudadano.Idciudadanos;
+                    dbCiudadano.Idciudadano = ciudadano.Idciudadano;
                     dbCiudadano.Nombre = ciudadano.Nombre;
                     dbCiudadano.Apellido = ciudadano.Apellido;
                     dbCiudadano.Fechanacimiento = ciudadano.Fechanacimiento;
