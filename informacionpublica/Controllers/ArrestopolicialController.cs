@@ -48,7 +48,7 @@ namespace InformacionPublica.Server.Controllers
                         Ciudadanos = new CiudadanosDTO
                         {
                             Ciudadanos =item.CiudadanoNavigation?.Ciudadanos,
-                            Idciudadanos =item.CiudadanoNavigation!.Idciudadano
+                            Idciudadano =item.CiudadanoNavigation!.Idciudadano
 
                         },
 

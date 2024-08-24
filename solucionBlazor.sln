@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InformacionPublica.Server",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InformacionCrud.Shared", "InformacionCrud.Shared\InformacionCrud.Shared.csproj", "{0881D0B5-251A-488A-9CCF-67C1FB74175E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorSolucion.Cliente", "BlazorSolucion.Cliente\BlazorSolucion.Cliente.csproj", "{D57B75C5-250D-464A-B36C-55920E164F69}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InformacionCrud.Client", "InformacionCrud.Client\InformacionCrud.Client.csproj", "{0D9F3828-C26A-43AE-ACE6-9EFE9696F50E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{0881D0B5-251A-488A-9CCF-67C1FB74175E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0881D0B5-251A-488A-9CCF-67C1FB74175E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0881D0B5-251A-488A-9CCF-67C1FB74175E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D57B75C5-250D-464A-B36C-55920E164F69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D57B75C5-250D-464A-B36C-55920E164F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D57B75C5-250D-464A-B36C-55920E164F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D57B75C5-250D-464A-B36C-55920E164F69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D9F3828-C26A-43AE-ACE6-9EFE9696F50E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D9F3828-C26A-43AE-ACE6-9EFE9696F50E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D9F3828-C26A-43AE-ACE6-9EFE9696F50E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D9F3828-C26A-43AE-ACE6-9EFE9696F50E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
